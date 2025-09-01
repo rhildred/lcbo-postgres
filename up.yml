@@ -1,4 +1,4 @@
-- name: bootstrap signoz
+- name: bootstrap lcbo database
   hosts: localhost
   gather_facts: false  
   vars:
