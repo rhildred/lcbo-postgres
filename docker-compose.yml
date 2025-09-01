@@ -34,10 +34,8 @@ services:
 
 volumes:
   pgadmin-data:
-  pg-data:networks:
-  signoz-net:
-    name: signoz-net
-
+  pg-data:
+  
 networks:
   signoz-net:
     name: signoz-net
