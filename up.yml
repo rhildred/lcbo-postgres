@@ -23,7 +23,9 @@
       - postgresql-client
     - name: Install psycopg2 python package
       ansible.builtin.pip:
-        name: psycopg2
+        name: 
+          - psycopg2-binary 
+          - pandas
     - name: Create the database specified in vars
       postgresql_db: name={{ db_name }}
         login_host={{ connect_host }}
